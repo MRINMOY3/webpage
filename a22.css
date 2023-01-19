@@ -1,0 +1,44 @@
+.carousal {
+  position: relative;
+}
+
+.carousal__item {
+  height: 300px;
+  background-color: aqua;
+  padding: 1em;
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  font-size: 2 em;
+  color: blueviolet;
+  display: none;
+}
+
+.carousal__item--selected
+{  
+    display: block;
+}
+
+.carousal__button__navigation {
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: cornflowerblue;
+  text-align: center;
+}
+
+.carousal__button {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: chartreuse;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer; 
+  /* c for the preview */
+}
+
+.carousal__button--selected {
+  background:white  ;
+}

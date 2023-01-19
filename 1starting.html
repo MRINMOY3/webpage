@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body> 
+    <div class="login-wrapper">
+      <form action="" class="form">
+        <h2 style="border-radius: 20px; background-color: chartreuse;">WELCOME to E~commerce Website</h2>
+        <h2  style="border-radius: 20px; background-color: chartreuse;">Kindly login by providing the details</h2>
+        <div class="input-login">
+          <input type="text" placeholder="Enter your email address"name="loginUser"  id="email" required />
+          <label for="loginUser">Email Address</label>
+        </div>
+        <div class="input-group">
+          <input type="password" placeholder="Enter your Password"name="loginPassword" id="Password" required />
+          <label for="loginPassword">Password</label>
+        </div>
+        <input type="submit" value="CLICK HERE TO LOGIN" class="submit-btn" onclick="auth()" style="color: red">
+      </form>
+    </div>
+    <script>
+      function auth() {
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("Password").value;
+        if (email == "mvmkvn19211@gmail.com" && password == "1234") {
+            window.open("index.html");
+          window.location.assign("index.html");
+          alert("Login Successful!");
+        }
+        else
+        {
+            alert("Login Unsuccessful!");
+        }
+      }
+    </script>
+  </body>
+</html>
